@@ -1,7 +1,10 @@
 /*CSS doc for basic HTML 5 file */
-p {
+.styledFont {
 		color: orange;
 		background-color: black;
 		font-weight: bold;
 		text-align: center;
+}
+.shadowText {
+	text-shadow: 2px 2px #ff0000;
 }
