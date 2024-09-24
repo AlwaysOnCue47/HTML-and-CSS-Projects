@@ -1,0 +1,7 @@
+/*CSS doc for basic HTML 5 file */
+p {
+		color: orange;
+		background-color: black;
+		font-weight: bold;
+		text-align: center;
+}
