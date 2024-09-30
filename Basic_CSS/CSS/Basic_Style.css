@@ -67,7 +67,7 @@ h1 {
 
 .container .squares:nth-child(-n+4):hover {
   background-image: url(../Icons/icons.png);
-  transform: scale(.5);
+  transform: scale(.5); /* why doesn't it scale after adding annimation? why is this line here?? */
   animation-name: race;
   animation-duration: 2.5s;
   animation-iteration-count: infinite;
