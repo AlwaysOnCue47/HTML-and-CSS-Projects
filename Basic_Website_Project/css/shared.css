@@ -105,11 +105,11 @@ section {
   margin-left: -15xp;
 }
 
-.clearfix::after, .container::after, .navbar::after {
+/*.clearfix::after, .container::after, .navbar::after {
   clear: both;
   display: table;
   content: " ";
-}
+}*/
 
 .wrap {
   height: 100%;
@@ -271,7 +271,7 @@ section {
 
 .terms {
   margin: 30px 1px 0 0;
-  margin-top: 13%;
+  margin-top: 7%;
   padding-left: 52px;
   font-size: 14px;
   line-height: 5px;
