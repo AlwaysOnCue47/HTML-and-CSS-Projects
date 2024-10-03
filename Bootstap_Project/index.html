@@ -10,10 +10,11 @@
   </head>
   <body>
   <div class="container">
-      
+        <!-- NAV BAR-->
+      <div style="padding-bottom: 20px;"> 
         <nav class="navbar navbar-expand-lg bg-warning" >
           <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
+            <a class="navbar-brand" href="#"><img src="./Images/ComBadgeOne.png" width="200px" height="100px">Martin's Bootstrap Demo</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
             data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -24,10 +25,10 @@
                   <a class="nav-link active" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Features</a>
+                  <a class="nav-link" href="#pictures">Pictures</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Pricing</a>
+                  <a class="nav-link" href="#moreThings">More Things</a>
                 </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -43,9 +44,129 @@
             </div>
           </div>
         </nav>
-  
+      </div>  
+        <!-- END NAV BAR-->
+         <!-- Picture Carousel-->
+      <div class="row justify-content-center">
+        <div class="col-6">
+         <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./Images/beautyandthebeast.jpg" class="d-block w-100" alt="Beauty and the Beast">
+            </div>
+            <div class="carousel-item">
+              <img src="./Images/ghostintheshell.jpg" class="d-block w-100" alt="Ghost in the Shell">
+            </div>
+            <div class="carousel-item">
+              <img src="./Images/kongskullisland.jpg" class="d-block w-100" alt="Kong Skull Island">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
     </div>
+    
+         <!-- END Picture Carousel-->
+        <!-- More Page Content-->
+         <h1 class="text-center p-2 mb-1 mt-4">Not since GeoCities have I had a website!</h1>
+         <div class="w-100 bg-dark-subtle p-2 mb-2">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, laborum aut totam corporis consequatur voluptate dolore alias neque harum voluptatum aliquam quod cum dolor? Ea eaque iste similique esse ipsa, magni cum aspernatur possimus voluptate ratione cupiditate dolorem consectetur expedita, impedit dolorum aut ex consequatur doloremque.</p>
+          <button type="button" class="btn btn-primary btn-sm">Join Now!</button>
+         </div>
+        
+         <h2 id="moreThings" class="fs-4 p5 mt-5 mb-5 text-center">Check out these more things!</h2>
+         
+        <div class="row">
+          <div class="col">
+            <!-- card 1 -->
+            <div class="card">
+              <img src="./Images/borg-children.jpg" class="card-img-top" alt="Borg Kids">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <!-- card 2 -->
+          <div class="col">  
+            <div class="card">
+              <img src="./Images/fc-drones.jpg" class="card-img-top" alt="Borg Kids">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <!-- card 3 -->
+          <div class="col">  
+            <div class="card">
+              <img src="./Images/borg-children.jpg" class="card-img-top" alt="Borg Kids">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        </div> <!-- end of ROW div -->
 
+        <!-- About section. using 2 rows and 2 colunms-->
+         <div class="row">
+          <div class="col-6">
+            <div class="bg-dark-subtle p-4 mt-5 mb-2">
+              <div class="bg-dark text-white p-5 mt-5 mb-5">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto ducimus repudiandae illum. Harum, exercitationem ipsum. Dolores eaque illo fugiat similique iure sunt, nihil facilis! Quidem in laboriosam quo aspernatur velit?</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="bg-dark-subtle p-4 mt-5 mb-2">
+              <div class="bg-dark text-white p-5 mt-5 mb-5">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto ducimus repudiandae illum. Harum, exercitationem ipsum. Dolores eaque illo fugiat similique iure sunt, nihil facilis! Quidem in laboriosam quo aspernatur velit?</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="bg-dark-subtle p-4 mt-5 mb-5">
+              <div class="bg-dark text-white p-5 mt-5 mb-5">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto ducimus repudiandae illum. Harum, exercitationem ipsum. Dolores eaque illo fugiat similique iure sunt, nihil facilis! Quidem in laboriosam quo aspernatur velit?</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="bg-dark-subtle p-4 mt-5 mb-5">
+              <div class="bg-dark text-white p-5 mt-5 mb-5">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto ducimus repudiandae illum. Harum, exercitationem ipsum. Dolores eaque illo fugiat similique iure sunt, nihil facilis! Quidem in laboriosam quo aspernatur velit?</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+         </div><!--end of row div-->
+      
+  </div>
+  <footer>
+    <div class="bg-dark-subtle p-1 mt-5 mb-5">
+      <div class="w-100 bg-dark-subtle p-2 mb-2">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, laborum aut totam corporis consequatur voluptate dolore alias neque harum voluptatum aliquam quod cum dolor? Ea eaque iste similique esse ipsa, magni cum aspernatur possimus voluptate ratione cupiditate dolorem consectetur expedita, impedit dolorum aut ex consequatur doloremque.</p>
+    </div>
+  </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>
