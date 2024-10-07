@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mod 5 challenge</title>
+  <style>
+    body {
+      padding-top: 200px;
+      background-color: bisque;
+    }
+    .box {
+    text-align: center;
+    margin-bottom: 100px;
+    
+    }
+
+    .but1 {
+      height: 200px;
+      width: 200px;
+      border: none;
+      background-color: #0071ff;
+      padding: .8em 2.5em;
+      color: white;
+      font-size: 1.2rem;
+      font-weight: 500;
+      cursor: pointer;
+
+      
+    }
+
+    .but1:hover {
+      animation-name: spin;
+      animation-duration: 3s;
+      animation-timing-function: ease;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+
+    @keyframes spin  {
+      0% {
+        transform: rotateX('0') rotateY('0') rotateZ('0');
+      }
+
+      50% {
+        transform: rotateX('0') rotateY('0') rotateZ('0');
+        scale: 1.5;
+        border-radius: 25;
+      }
+      100% {
+        transform: rotateX('0') rotateY('180deg') rotateZ('180deg');
+        border-radius: 50%;
+        scale: 1;
+      }
+    }
+
+    .loading {
+      height: 50px;
+      width: 50px;
+      border: 6px solid aqua;
+      border-radius: 4px;
+      box-shadow: 0 0 8px aqua, 0 0 8px aqua inset;
+      margin: auto;
+      animation: 2s loading ease-in-out infinite; /*this line is short hand for duration, animation name, timing-function, duration*/
+
+    }
+
+    @keyframes loading{
+      0%{
+
+      }
+      33%{
+
+      }
+      67% {
+
+      }
+      100%{
+        
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="box">
+    <button class="but1">Click me!</button>
+  </div> 
+
+  <div class="box">
+    <div class="loading"></div>
+  </div>
+  
+</body>
+</html>
