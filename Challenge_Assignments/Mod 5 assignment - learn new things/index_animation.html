@@ -7,12 +7,11 @@
   <style>
     body {
       padding-top: 200px;
-      background-color: bisque;
+      background-color: gray;
     }
     .box {
     text-align: center;
     margin-bottom: 100px;
-    
     }
 
     .but1 {
@@ -25,8 +24,6 @@
       font-size: 1.2rem;
       font-weight: 500;
       cursor: pointer;
-
-      
     }
 
     .but1:hover {
@@ -39,16 +36,16 @@
 
     @keyframes spin  {
       0% {
-        transform: rotateX('0') rotateY('0') rotateZ('0');
+        transform: rotateX(0) rotateY(0) rotateZ(0);
       }
 
       50% {
-        transform: rotateX('0') rotateY('0') rotateZ('0');
+        transform: rotateX(0) rotateY(0) rotateZ(0);
         scale: 1.5;
         border-radius: 25;
       }
       100% {
-        transform: rotateX('0') rotateY('180deg') rotateZ('180deg');
+        transform: rotateX(0) rotateY(180deg) rotateZ(180deg);
         border-radius: 50%;
         scale: 1;
       }
@@ -62,21 +59,23 @@
       box-shadow: 0 0 8px aqua, 0 0 8px aqua inset;
       margin: auto;
       animation: 2s loading ease-in-out infinite; /*this line is short hand for duration, animation name, timing-function, duration*/
-
     }
 
     @keyframes loading{
       0%{
+        transform: rotateX(0) rotateY(0) rotateZ(0);
 
       }
       33%{
+        transform: rotateX(180deg) rotateY(0) rotateZ(0);
 
       }
       67% {
+        transform: rotateX(180deg) rotateY(180deg) rotateZ(0);
 
       }
       100%{
-        
+        transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
       }
     }
 
@@ -88,8 +87,8 @@
   </div> 
 
   <div class="box">
-    <div class="loading"></div>
+    <div class="loading"></div><div class="loading"></div>
   </div>
-  
+
 </body>
 </html>
