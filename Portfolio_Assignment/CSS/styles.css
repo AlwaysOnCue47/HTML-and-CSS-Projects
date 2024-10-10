@@ -154,11 +154,20 @@ body {
  /* FOOTER STYLES */
 
  .footer-banner {
-  padding-top: 20px;
-  padding-bottom: 10px;
-  padding-left: 40px;
-  background-color: black;
+  padding-top: 60px;
+  padding-bottom: 20px;
+  
+  background-image: linear-gradient( 
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1) 30%,
+    rgba(0, 0, 0, 1) 100%, 
+    rgba(0, 0, 0, 0)
+  );
+ }
+
+ .footer-banner p {
   color: aliceblue;
+  display: inline-block;
  }
 
  /* ANIMATION STYLES - SPINNING BOX*/
