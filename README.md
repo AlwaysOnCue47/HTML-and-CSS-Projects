@@ -1,2 +1,5 @@
-# HTML-and-CSS-Projects
-This repository is used for my AolCC HTML course
+# The Adventures of Learning to Code
+
+## This repository is used for my educational journey
+
+### 
