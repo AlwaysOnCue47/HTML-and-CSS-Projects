@@ -5,6 +5,12 @@ body {
   padding-top: 100px;  /*added top padding so first element won't be underneat navbar */
 }
 
+h1 {
+  text-align: center;
+  color: aliceblue;
+  text-shadow: 2px 2px #808080;
+}
+
 /*   Navigation Bar styling  */
 .navbar {
   background-color: lightpink;
@@ -70,7 +76,7 @@ body {
     rgba(0, 0, 0, 1) 90%,
     rgba(0, 0, 0, 0)
   );
-  margin-top: 80px;
+  margin-top: 40px;
   padding-top: 20px;
   padding-bottom: 20px;
   
@@ -120,14 +126,12 @@ body {
 
 /* CONTACT FORM STYLES */
 .contact {
-  text-align: center;
-  margin: 10px;
-  color: aliceblue;
+  margin: auto;
+  color: rgb(41, 41, 41);
   font-size: 15px;
   outline: none;
   font-weight: 600;
-  color: #8d8e8f;
-  padding-bottom: 10px;
+  padding: 10px 5px;
   width: 70%;
   border: 1px solid #808080;
   border-radius: 7px;
@@ -178,13 +182,13 @@ body {
   border: 3px solid rgb(17, 0, 255);
   border-radius: 3px;
   box-shadow: 0 0 8px aqua, 0 0 4px aqua inset;
-  animation: 6s loading ease-in-out infinite; 
-  transition: 2s; /*this line is short hand for duration, animation name, timing-function, duration*/
+  animation: 6s loading ease-in-out infinite; /*this line is short hand for duration, animation name, timing-function, duration*/
+  transition: 3s; 
 }
 
 .little-box:hover {
   animation-duration: 3s;
-  scale: 1.5;
+  
  
 }
 
