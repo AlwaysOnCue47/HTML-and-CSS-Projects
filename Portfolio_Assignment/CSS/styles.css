@@ -2,7 +2,6 @@ html {
   scroll-behavior: smooth;  /* this makes the links scroll to it's target instead of jumping */
 }  
 
-
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -98,11 +97,10 @@ p {
     rgba(0, 0, 0, 1) 90%,
     rgba(0, 0, 0, 0)
   );
-  
   margin-top: 60px;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
   padding-top: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 200px;
 
 }
 
@@ -120,7 +118,7 @@ p {
   width: 600px;
   height: 400px;
   border-style: solid;
-  border-color: aliceblue;
+  border-color: rgb(32, 32, 32);
   overflow: hidden;
   position: relative;
 }
@@ -130,18 +128,28 @@ p {
   height: 350px;
   background-color: lightblue;
   border-style: solid;
-  border-color: rgb(43, 231, 43);
+  border-color: rgb(39, 80, 51);
+}
+
+.aboutwrap {
+  transform: scale(1.0); /* THIS div serves as bounderies for the about-text div. Scale(1.0) obviously would not make anything bigger or larger than it is, this transform is basically saying scale this div to whatever size of div that's inside it to accomodate it. This way I can set about-text div position to fixed so it will keep it's position PSEUDO relative to the about-box div but will ignore the about-box div's overflow hidden property. So, when it scales up with the hover effect it will grow beyond the borders of the about-box div. Keeping the div's background picture overflow hidden while letting the text paragrapgh remain visable while expanding out of the box -  Brilliant!!*/
 }
 
 .about-text {
-  background-color: rgba(0, 0, 0, .5);
+  background-color: rgba(28, 182, 74, 0.5);
   margin-left: 10px;
   margin-right: 10px;
   padding: 2%;
-  position: absolute;
+  position: fixed;
   color: aliceblue;
   font-weight: 100;
   font-size: 18pt;
+  max-width: 100%; /* Added max with of 100% so that when it scales up from the hover it will go beyond the edge of the screen but not create a side scroll bar*/
+  transition: transform .5s;
+}
+
+.about-text:hover {
+  transform: scale(1.2);
 }
 
 .quote {
@@ -156,7 +164,16 @@ p {
   height: 400px;
 }
 
+/* Contact Section */
+
+.contact-section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: lightblue;
+}
+
 /* CONTACT FORM STYLES */
+
 .contact {
   margin: auto;
   color: rgb(41, 41, 41);
@@ -187,6 +204,7 @@ p {
   background: #13161B;
   box-shadow: inset 0px 3px 0px 0px rgba(5, 5, 5, .15);
 }
+
 
  /* FOOTER STYLES */
 
@@ -269,7 +287,6 @@ p {
   animation-duration: 10s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-  
 }
 
 @keyframes scrollleft {
