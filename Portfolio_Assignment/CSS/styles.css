@@ -15,7 +15,7 @@ h1 {
   text-shadow: 2px 2px #808080;
 }
 
-h2 {
+h2, h3 {
   font-family: Verdana, arial;
 }
 
@@ -26,6 +26,12 @@ p {
 .avatar {
   height: 200px;
   transition: 3s;
+}
+
+.avatar2 {
+  height: 65px;
+  margin-left: 20px;
+
 }
 
 .avatar:hover {
@@ -142,10 +148,12 @@ p {
 }
 
 .about-box-content {
+  text-align: center;
   width: 550px;
   height: 350px;
   padding: 2%;
-  background-color: lightblue;
+  background-color: rgb(17, 17, 17);
+  color: aliceblue;
   border-style: solid;
   border-color: rgb(39, 80, 51);
 }
@@ -182,6 +190,8 @@ p {
   width: 600px;
   height: 400px;
 }
+
+
 
 /* Contact Section */
 
@@ -241,6 +251,12 @@ p {
   );
  }
 
+ .footer-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
  /* ANIMATION STYLES - SPINNING BOX */
 
  .little-box {
@@ -282,7 +298,27 @@ p {
   }
 }
 
-/* SCROLLING ANIMATION */
+/* GIT HUB IMAGE ANIMATION */
+
+.git-logo:hover {
+  animation: git-spin 3s ease infinite;
+  animation-name: git-spin;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes git-spin{ 
+  0%{
+    transform: rotatez(0);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+/* SPACESHIP SCROLLING ANIMATION */
+
 .spaceship-container { 
   width: 90%;
   margin-inline: auto;
