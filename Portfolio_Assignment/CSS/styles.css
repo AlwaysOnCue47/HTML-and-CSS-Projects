@@ -191,14 +191,25 @@ p {
   height: 400px;
 }
 
-
-
 /* Contact Section */
 
 .contact-section {
+  display: flex;
+  justify-content: space-evenly;
   padding-top: 40px;
   padding-bottom: 40px;
   background-color: lightblue;
+}
+
+.contact-wrap1 {
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+  background-color: lightpink;
+}
+
+.contact-wrap2 {
+  background-color: lightpink;
 }
 
 /* CONTACT FORM STYLES */
@@ -233,7 +244,6 @@ p {
   background: #13161B;
   box-shadow: inset 0px 3px 0px 0px rgba(5, 5, 5, .15);
 }
-
 
  /* FOOTER STYLES */
 
@@ -301,11 +311,9 @@ p {
 /* GIT HUB IMAGE ANIMATION */
 
 .git-logo:hover {
-  animation: git-spin 3s ease infinite;
+  animation: git-spin 3s linear infinite;
   animation-name: git-spin;
   animation-duration: 3s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
 }
 
 @keyframes git-spin{ 
