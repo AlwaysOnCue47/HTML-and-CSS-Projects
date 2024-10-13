@@ -23,6 +23,14 @@ p {
   font-family: 'Lucida console', arial;
 }
 
+.avatar {
+  height: 200px;
+  transition: 3s;
+}
+
+.avatar:hover {
+  transform: scale(1.5);
+}
 /*   NAVIGATION BAR STYLES  */
 
 .logo {
@@ -82,8 +90,12 @@ p {
 /* text div over video */
 
 .video-text {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 5%;
-  background-color: rgba(0, 0, 0, .5);
+  background-color: rgba(0, 0, 0, .8);
   color: aliceblue;
   transition: ease;
 
@@ -104,7 +116,6 @@ p {
     rgba(0, 0, 0, 1) 90%,
     rgba(0, 0, 0, 0)
   );
-  margin-top: 10px;
   margin-bottom: 20px;
   padding-top: 120px;
   padding-bottom: 200px;
