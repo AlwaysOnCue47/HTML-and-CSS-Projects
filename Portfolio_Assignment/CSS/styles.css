@@ -5,7 +5,7 @@ html {
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  padding-top: 100px;  /*added top padding so first element won't be underneat navbar */
+  padding-top: 120px;  /*added top padding so first element won't be underneat navbar */
 }
 
 h1 {
@@ -20,13 +20,18 @@ h2 {
 }
 
 p {
-  font-family: 'Lucida console';
+  font-family: 'Lucida console', arial;
 }
 
 /*   NAVIGATION BAR STYLES  */
 
+.logo {
+  width: 68px;
+
+}
+
 .navbar {
-  background-color: lightpink;
+  background-color: rgb(54, 54, 54);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -71,21 +76,23 @@ p {
   right: 0;
   top: 0;
   z-index: -1;
-  
+    
 }
 
 /* text div over video */
 
-#video-text {
+.video-text {
   padding: 5%;
   background-color: rgba(0, 0, 0, .5);
   color: aliceblue;
+  transition: ease;
 
 }
 
 .center {
+  align-items: center;
   text-align: center;
-  line-height: 1.2;
+  line-height: 1.2; 
 }
 
 /* about section */
@@ -97,9 +104,9 @@ p {
     rgba(0, 0, 0, 1) 90%,
     rgba(0, 0, 0, 0)
   );
-  margin-top: 60px;
+  margin-top: 10px;
   margin-bottom: 20px;
-  padding-top: 100px;
+  padding-top: 120px;
   padding-bottom: 200px;
 
 }
@@ -126,6 +133,7 @@ p {
 .about-box-content {
   width: 550px;
   height: 350px;
+  padding: 2%;
   background-color: lightblue;
   border-style: solid;
   border-color: rgb(39, 80, 51);
@@ -225,12 +233,13 @@ p {
  /* ANIMATION STYLES - SPINNING BOX */
 
  .little-box {
+  margin: auto;
   height: 30px;
   width: 30px;
   border: 3px solid rgb(17, 0, 255);
   border-radius: 3px;
   box-shadow: 0 0 8px aqua, 0 0 4px aqua inset;
-  animation: 8s loading ease-in-out infinite; /* this line is short hand for; animation cycle speed, animation name, timing-function, duration */
+  animation: 8s spin1 ease-in-out infinite; /* this line is short hand for; animation cycle speed, animation name, timing-function, duration */
   transition: 3s; 
 }
 
@@ -239,7 +248,7 @@ p {
   
 }
 
-@keyframes loading{
+@keyframes spin1{
   0%{
     transform: rotateX(0) rotateY(0) rotateZ(0);
 
