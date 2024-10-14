@@ -211,6 +211,8 @@ p {
 }
 
 .contact-wrap1 {
+  background-image: url(../images/message\ in\ a\ bottle.jpg);
+  background-size: contain;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -220,16 +222,16 @@ p {
   border-radius: 50%;
   border-style: solid;
   border-width: 30px;
-  border-color: rgba(28, 182, 74, 0.5);
+  border-color: rgb(16, 105, 43);
 }
 
 .contact-wrap2 {
   display: flex;
   align-items: center;
   background-image: url(../images/motherboard_2-wallpaper-1920x1080.jpg);
-  object-fit: contain;
+  background-size: contain;
   height: 400px;
-  width: 400px;
+  width: 600px;
 }
 
 /* CONTACT FORM STYLES */
@@ -240,11 +242,11 @@ p {
   font-size: 15px;
   outline: none;
   font-weight: 600;
-  padding: 10px 5px;
+  padding: 10px 15px;
   width: 70%;
   border: 1px solid #808080;
   border-radius: 7px;
-  background: rgb(227, 222, 222);
+  background: rgb(66, 252, 221);
   box-shadow: 2px 3px 3px 0px rgba(0, 0, 0, 0.3);
 }
 
@@ -263,6 +265,9 @@ p {
   border-radius: 7px;
   background: #13161B;
   box-shadow: inset 0px 3px 0px 0px rgba(5, 5, 5, .15);
+}
+.contact input[name="comment"] {
+  height: 100px;
 }
 
  /* FOOTER STYLES */
