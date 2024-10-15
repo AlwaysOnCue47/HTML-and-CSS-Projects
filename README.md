@@ -14,7 +14,7 @@
 ### Projects 
 - Portfolio Website.
   - Creating first website as a portfolio example. Created with HTML and CSS
-  - [Portfolio Website, no yet but will be when site goes live](http://www.github.com)
+  - [Portfolio Website](https://alwaysoncue47.github.io/portfolio/#home)
 
 This was one of the first computer system I owned.
 ![IBM PC, PS/2 model-25][model25]
