@@ -337,8 +337,7 @@ p {
 
 .git-logo:hover {
   animation: git-spin 3s linear infinite;
-  animation-name: git-spin;
-  animation-duration: 3s;
+
 }
 
 @keyframes git-spin{ 
